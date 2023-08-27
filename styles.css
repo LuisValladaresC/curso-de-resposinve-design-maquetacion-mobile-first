@@ -370,7 +370,6 @@ main {
   min-width: 288px;
   height: auto;
   margin: 0 auto;
-  margin-bottom: 50px;
 }
 .plans--title h2 {
   padding-top: 50px;
@@ -386,8 +385,19 @@ main {
   line-height: 1.8rem;
   color: #757575;
 }
+.plans-container--slider {
+  display: flex;
+  gap: 8px;
+  margin: 0 8px;
+  height: 316px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
 .plans-container--card {
   position: relative;
+  scroll-snap-align: center;
   width: 70%;
   min-width: 230px;
   max-width: 300px;
